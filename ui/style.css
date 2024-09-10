@@ -1,0 +1,122 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f6f6f6;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Left panel styling */
+.left-panel {
+    width: 20%;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+/* Right panel for the map */
+.right-panel {
+    width: 80%;
+    position: relative;
+}
+
+
+.divider {
+    width: 5px;
+    cursor: col-resize;
+    background-color: #f0f0f0;
+    position: relative;
+}
+
+#map {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+
+/* Card styling */
+.card {
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: none;
+    border-radius: 4px;
+}
+
+.card-header {
+    padding: 10px 0;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.card-title {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 700;
+    color: #333;
+}
+
+.card-body {
+    padding: 10px 0;
+}
+
+p.card-text {
+    font-size: 13px;
+    color: #999;
+    margin-bottom: 8px;
+}
+
+.card-title {
+    font-size: 22px;
+}
+
+.list-header {
+    font-weight: 800;
+    display: flex;
+    justify-content: space-between;
+    background-color: #f9f9f9;
+}
+
+.list-group {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.list-group-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+    font-size: 16px;
+    color: #444;
+}
+
+.list-group-item:hover {
+    background-color: #f9f9f9;
+}
+
+/* Ensure all spans inside list-group-item align properly */
+.list-header span,
+.list-group-item span {
+    flex: 1;
+    text-align: center;
+}
+
+/* Adjust individual column widths */
+.km-header, .km {
+    flex-basis: 10%;  /* KM column width */
+}
+
+.pace-header, .pace {
+    flex-basis: 45%;  /* Pace column width */
+}
+
+.elev-header, .elev {
+    flex-basis: 45%;  /* Elevation column width */
+}
